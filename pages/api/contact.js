@@ -16,11 +16,13 @@ export default async function handler(req, res) {
 
   try {
     await transporter.sendMail({
-      from: `"${name}" <${email}>`,
+      from: `"${name}" <osvaldomartinezespinosa@gmail.com>`, 
       to: 'osvaldomartinezespinosa@gmail.com',
+      replyTo: email, 
       subject: `Nuevo mensaje: ${subject}`,
       text: message,
     });
+
 
     res.status(200).json({ success: true });
   } catch (err) {

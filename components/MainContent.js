@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function MainContent() {
   return (
     <main style={styles.main}>
@@ -7,7 +9,7 @@ export default function MainContent() {
         <p style={styles.subtitle}>
           Tu tienda online de plantas para decorar, purificar el aire y conectar con la naturaleza.
         </p>
-        <a href="/" style={styles.ctaButton}>Ver catálogo</a>
+        <Link href="/" style={styles.ctaButton}>Ver catálogo</Link>
       </section>
 
       {/* Destacados */}
